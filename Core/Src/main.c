@@ -109,7 +109,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
 HAL_TIM_Base_Start_IT(&htim10);
 uint8_t asd[]= "Hello World -8\r\n";
-uint8_t sss[]= "Hollow World \r\n";
+uint8_t sss[]= "Hollow World -1\r\n";
   /* USER CODE END 2 */
  
  
