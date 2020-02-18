@@ -109,6 +109,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
 HAL_TIM_Base_Start_IT(&htim10);
 uint8_t asd[]= "Hello World -7\r\n";
+uint8_t sss[]= "Hollow World \r\n";
   /* USER CODE END 2 */
  
  
@@ -122,6 +123,7 @@ uint8_t asd[]= "Hello World -7\r\n";
     /* USER CODE BEGIN 3 */
 	  HAL_GPIO_WritePin(S_RPORT_EN_GPIO_Port, S_RPORT_EN_Pin, SET);
 	  HAL_UART_Transmit(&huart1, asd, 15, 10);
+	  HAL_UART_Transmit(&huart1, sss, 15, 10);
 	  HAL_GPIO_WritePin(S_RPORT_EN_GPIO_Port, S_RPORT_EN_Pin, RESET);
 	  HAL_Delay(1000);
   }
